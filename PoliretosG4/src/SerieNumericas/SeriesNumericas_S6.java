@@ -1,22 +1,20 @@
 package SerieNumericas;
-import java.util.Scanner;
-// 0 1 1 2 3 5 8 13 ...  
-public class S1 {
 
-    public void serie (){
+import java.util.Scanner;
+
+// 1  4   9   16  25  36  49  64 .... 
+public class SeriesNumericas_S6 {
+
+        public void G4_SeriesNumericas_S6(){
         Scanner scanner = new Scanner(System.in);
-        int a = 0, b =1, c = 0, n;
+        int a = 1, n ;
         System.out.println("Ingrese el numero de elementos que desea que tenga la serie: ");
         n = scanner.nextInt();
         System.out.println(" La serie es la siguiente: ");
         for (int i = 0; i < n; i++) {
             System.out.print(a + " ");
-            c = a + b;
-            a = b;
-            b = c;
+            a = a + (2*i) + 3;
         }
         scanner.close();
-        
     }
 }
-

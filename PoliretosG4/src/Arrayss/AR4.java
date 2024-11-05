@@ -1,4 +1,4 @@
-package Arrays;
+package Arrayss;
 /*Crear un matriz donde forme una X con su nombre y apellido 
         P                           P 
             a                   a 

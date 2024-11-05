@@ -1,4 +1,4 @@
-package Figuras;
+package Figurass;
 
 import java.util.Scanner;
 
