@@ -50,6 +50,7 @@ public class A1 {
       } else {
           System.out.println("La cadena no es válida");
       }
+      scanner.close();
   } 
 }
   

@@ -14,5 +14,6 @@ public class SC6_1 {
             
             System.out.print((char)('a' + (i % 26)) + " "); // Codigo ASCII empieza de a es 97
         }
+        scanner.close();
     }
 }

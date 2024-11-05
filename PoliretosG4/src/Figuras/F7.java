@@ -27,5 +27,6 @@ public class F7 {
             }
             System.out.println(" " );
         }
+        scanner.close();
     }
 }

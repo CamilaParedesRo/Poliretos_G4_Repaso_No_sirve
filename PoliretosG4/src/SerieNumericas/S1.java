@@ -15,7 +15,7 @@ public class S1 {
             a = b;
             b = c;
         }
-    
+        scanner.close();
         
     }
 }

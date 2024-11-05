@@ -100,5 +100,6 @@ public class A6 {
         } else {
             System.out.println("La palabra no es válida en el lenguaje L.");
         }
+        scanner.close();
     }
 }

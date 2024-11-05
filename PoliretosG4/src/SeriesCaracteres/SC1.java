@@ -18,6 +18,7 @@ public class SC1 {
                 System.out.print("- ");
             }
         }
+        scanner.close();
 
 
      }

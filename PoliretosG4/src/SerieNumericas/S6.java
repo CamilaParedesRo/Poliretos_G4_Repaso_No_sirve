@@ -15,6 +15,6 @@ public class S6 {
             System.out.print(a + " ");
             a = a + (2*i) + 3;
         }
-        
+        scanner.close();
     }
 }

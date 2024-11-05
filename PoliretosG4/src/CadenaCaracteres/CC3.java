@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class CC3 {
     public void cadena3() {
         String frase;
-        char vocal;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese una frase: ");
        frase = scanner.nextLine();
        String sinVocales = frase.replaceAll("[a,e,i,o,u,A,E,I,O,U]", " ");
        System.out.println(sinVocales);
+       scanner.close();
     }
     
 }

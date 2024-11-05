@@ -31,6 +31,7 @@ public void figura12() {
                 }  
         }
         System.out.println( " ");
-    }   
+    }  
+    scanner.close(); 
 }
 }

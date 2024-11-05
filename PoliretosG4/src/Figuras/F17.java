@@ -1,7 +1,4 @@
 package Figuras;
-
-import java.util.Scanner;
-
 /*
        1           1
          0      0

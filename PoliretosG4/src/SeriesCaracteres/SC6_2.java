@@ -6,7 +6,7 @@ public class SC6_2 {
 
      public void serieSC6_2 (){
         Scanner scanner = new Scanner(System.in);
-        int cantidad, b;
+        int cantidad;
         System.out.println("Ingrese el numero de elementos que desea que tenga la serie: ");
         cantidad = scanner.nextInt();
         System.out.println(" La serie es la siguiente: ");
@@ -19,5 +19,6 @@ public class SC6_2 {
                 System.out.print("- ");
             }
         }
+        scanner.close();
     }
  }
