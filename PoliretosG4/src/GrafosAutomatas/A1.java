@@ -6,11 +6,9 @@ import java.util.Scanner;
 public class A1 {
    
    public static boolean validarCadena(String cadena) {
-      int estado = 0; // Estado inicial
-
+      int estado = 0; 
       for (int i = 0; i < cadena.length(); i++) {
           char simbolo = cadena.charAt(i);
-
           switch (estado) {
               case 0:
                   if (simbolo == 'a') {
@@ -33,10 +31,9 @@ public class A1 {
                   break;
 
               case 2:
-                  return false; // Si hay otro símbolo después de 'c', no es válido
+                  return false;
           }
       }
-      
       return estado == 2;
   }
   

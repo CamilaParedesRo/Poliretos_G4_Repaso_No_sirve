@@ -11,7 +11,7 @@ public class SC6_2 {
         cantidad = scanner.nextInt();
         System.out.println(" La serie es la siguiente: ");
         for (int i = 0 ; i < cantidad; i++) {
-            if (i == 0 || i % 2 == 0) {          
+            if (i % 2 == 0) {          
                 System.out.print((char)('a' + (i % 26))  + " ");
             }else if (i % 4 == 1) {
                 System.out.print("+ ");

@@ -18,35 +18,28 @@ apañes, Enrique, quieren}
 public class CC8 {
 
        public void cadena8() {
-        // Listado de palabras y sus anagramas correspondientes
-        Map<String, String> palabrasYAnagramas = new HashMap<>();
-        palabrasYAnagramas.put("delira", "lidera");
-        palabrasYAnagramas.put("ballena", "llenaba");
-        palabrasYAnagramas.put("alondra", "ladrona");
-        palabrasYAnagramas.put("españa", "apanes");
-        palabrasYAnagramas.put("enrique", "quieren");
 
-        // Mostrar las palabras disponibles al usuario
-        System.out.println("Las palabras son: " + palabrasYAnagramas.keySet());
+        int maxIntentos = 3;
+        Map<String, String> palabraConSuAnagrama = new HashMap<>();
+        palabraConSuAnagrama.put("delira", "lidera");
+        palabraConSuAnagrama.put("ballena", "llenaba");
+        palabraConSuAnagrama.put("alondra", "ladrona");
+        palabraConSuAnagrama.put("españa", "apanes");
+        palabraConSuAnagrama.put("enrique", "quieren");
+
+        System.out.println("Las palabras son: " + palabraConSuAnagrama.keySet());
         System.out.println("Ingresa una palabra y su anagrama correspondiente:");
-
         Scanner scanner = new Scanner(System.in);
         boolean acierto = false;
 
-        // Intentos máximos
-        int maxIntentos = 3;
-
-        // Ciclo para los intentos
         for (int intentos = 1; intentos <= maxIntentos; intentos++) {
             System.out.print("Ingrese la palabra: ");
             String palabra = scanner.nextLine().toLowerCase();
-
             System.out.print("Ingrese el anagrama: ");
             String anagramaIntento = scanner.nextLine().toLowerCase();
 
-            // Verificamos si el anagrama es correcto
-            if (palabrasYAnagramas.containsKey(palabra) && 
-                anagramaIntento.equalsIgnoreCase(palabrasYAnagramas.get(palabra))) {
+            if (palabraConSuAnagrama.containsKey(palabra) && 
+                anagramaIntento.equalsIgnoreCase(palabraConSuAnagrama.get(palabra))) {
                 acierto = true;
                 System.out.println("¡Correcto! El anagrama de " + palabra + " es " + anagramaIntento);
                 break;
@@ -55,10 +48,9 @@ public class CC8 {
             }
         }
 
-        // Mensaje final en caso de fallar todos los intentos
         if (!acierto) {
             System.out.println("Lo siento, has fallado tres veces. Aquí están los anagramas correctos:");
-            for (Map.Entry<String, String> entrada : palabrasYAnagramas.entrySet()) {
+            for (Map.Entry<String, String> entrada : palabraConSuAnagrama.entrySet()) {
                 System.out.println("Palabra: " + entrada.getKey() + " -> Anagrama: " + entrada.getValue());
             }
         }

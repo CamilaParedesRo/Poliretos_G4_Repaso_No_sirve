@@ -12,7 +12,7 @@ public class SC1 {
         cantidad = scanner.nextInt();
         System.out.println(" La serie es la siguiente: ");
         for (int i = 0 ; i < cantidad; i++) {
-            if (i == 0 || i % 2 == 0) {
+            if (i % 2 == 0) {
                 System.out.print("+ ");
             } else {
                 System.out.print("- ");

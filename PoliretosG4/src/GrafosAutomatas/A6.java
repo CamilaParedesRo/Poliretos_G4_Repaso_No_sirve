@@ -11,87 +11,85 @@ import java.util.Scanner;
         for (  
 */
 public class A6 {
-    
     public enum Estado {
-        inicial, f, fo, for_, i, if_, ifel, ifels, ifelse, forea, foreac, foreach, error
+        q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, qError
     }
 
     public static Estado transicion(Estado estadoActual, char c) {
         switch (estadoActual) {
-            case inicial:
-                if (c == 'f') return Estado.f;
-                if (c == 'i') return Estado.i;
-                return Estado.error;
+            case q0:
+                if (c == 'f') return Estado.q1;
+                if (c == 'i') return Estado.q4;
+                return Estado.qError;
 
-            case f:
-                if (c == 'o') return Estado.fo;
-                if (c == 'o') return Estado.forea;
-                return Estado.error;
+            case q1:
+                if (c == 'o') return Estado.q2;
+                return Estado.qError;
 
-            case fo:
-                if (c == 'r') return Estado.for_;
-                return Estado.error;
+            case q2:
+                if (c == 'r') return Estado.q3;
+                return Estado.qError;
 
-            case for_:
-                if (c == '(') return Estado.inicial; // Estado de aceptación para "for("
-                return Estado.error;
+            case q3: // Estado de aceptación para "for("
+                if (c == '(') return Estado.q0;
+                return Estado.qError;
 
-            case i:
-                if (c == 'f') return Estado.if_;
-                if (c == 'f') return Estado.ifel;
-                return Estado.error;
+            case q4:
+                if (c == 'f') return Estado.q5;
+                return Estado.qError;
 
-            case if_:
-                if (c == '(') return Estado.inicial; // Estado de aceptación para "if("
-                return Estado.error;
+            case q5: // Estado de aceptación para "if("
+                if (c == '(') return Estado.q0;
+                if (c == 'e') return Estado.q6;
+                return Estado.qError;
 
-            case ifel:
-                if (c == 's') return Estado.ifels;
-                return Estado.error;
+            case q6:
+                if (c == 's') return Estado.q7;
+                return Estado.qError;
 
-            case ifels:
-                if (c == 'e') return Estado.ifelse;
-                return Estado.error;
+            case q7:
+                if (c == 'e') return Estado.q8;
+                return Estado.qError;
 
-            case ifelse:
-                if (c == '(') return Estado.inicial; // Estado de aceptación para "ifelse("
-                return Estado.error;
+            case q8: // Estado de aceptación para "ifelse("
+                if (c == '(') return Estado.q0;
+                return Estado.qError;
 
-            case forea:
-                if (c == 'e') return Estado.foreac;
-                return Estado.error;
+            case q9:
+                if (c == 'e') return Estado.q10;
+                return Estado.qError;
 
-            case foreac:
-                if (c == 'h') return Estado.foreach;
-                return Estado.error;
+            case q10:
+                if (c == 'h') return Estado.q11;
+                return Estado.qError;
 
-            case foreach:
-                if (c == '(') return Estado.inicial; // Estado de aceptación para "foreach("
-                return Estado.error;
+            case q11: // Estado de aceptación para "foreach("
+                if (c == '(') return Estado.q0;
+                return Estado.qError;
 
             default:
-                return Estado.error;
+                return Estado.qError;
         }
     }
 
     // Método para verificar si una cadena es válida en el lenguaje
     public static boolean validarCadena(String cadena) {
-        Estado estadoActual = Estado.inicial;
+        Estado estadoActual = Estado.q0;
 
         for (char c : cadena.toCharArray()) {
             estadoActual = transicion(estadoActual, c);
-            if (estadoActual == Estado.error) {
+            if (estadoActual == Estado.qError) {
                 return false; // La cadena no es válida
             }
         }
 
         // Verificar si el estado final es un estado de aceptación
-        return estadoActual == Estado.for_ || estadoActual == Estado.if_ || estadoActual == Estado.ifelse || estadoActual == Estado.foreach;
+        return estadoActual == Estado.q3 || estadoActual == Estado.q5 || estadoActual == Estado.q8 || estadoActual == Estado.q11;
     }
 
     // Método para ejecutar el autómata
     public void automata6() {
-        Scanner scanner = new Scanner(System.in);   
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese una palabra: ");
         String cadena = scanner.nextLine();
 
