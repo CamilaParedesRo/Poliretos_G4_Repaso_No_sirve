@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class CadenaDeCaractere {
+public class CadenaDeCaracteres {
 
    public void G4_CadenadeCaracteres_3( Scanner scanner) {
       System.out.println("Cadena de caracteres 3"); 
