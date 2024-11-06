@@ -2,7 +2,7 @@ package Poliretos;
 
 import java.util.Scanner;
 
-public class Figuras {
+public class Figura {
 
    public void G4_Figuras_2() {
       int tamano = 5;

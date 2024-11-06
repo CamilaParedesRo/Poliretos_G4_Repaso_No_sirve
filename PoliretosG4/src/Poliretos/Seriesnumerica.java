@@ -2,7 +2,7 @@ package Poliretos;
 
 import java.util.Scanner;
 
-public class Seriesnumericas {
+public class Seriesnumerica {
 
    public void G4_SeriesNumericas_S1 (Scanner scanner){
       System.out.println("Serie Numerica 01");

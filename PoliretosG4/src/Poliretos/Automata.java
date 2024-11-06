@@ -2,7 +2,7 @@ package Poliretos;
 
 import java.util.Scanner;
 
-public class Automatas {
+public class Automata {
 
 // Automata 1
    public static boolean validarCadena_automata1(String cadena) {

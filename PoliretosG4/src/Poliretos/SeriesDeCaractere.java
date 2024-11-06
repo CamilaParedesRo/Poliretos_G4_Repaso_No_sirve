@@ -2,7 +2,7 @@ package Poliretos;
 
 import java.util.Scanner;
 
-public class SeriesDeCaracteres {
+public class SeriesDeCaractere {
 
    public void G4_SeriesDeCaracteres_SC1 (Scanner scanner){
         int cantidad;
