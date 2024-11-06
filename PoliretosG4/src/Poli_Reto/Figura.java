@@ -23,19 +23,21 @@ public class Figura {
     }
 
     public void G4_Figura_9(Scanner scanner) {
-        int desplazamiento;
-        
-        System.out.println("Ingrese el número de la extensión de la escalera: ");
-        desplazamiento = scanner.nextInt();
+        System.out.print("Ingrese la altura de la figura: ");
     
-        int numeroColumna = (2 * desplazamiento) - 1;
-    
-        for (int fila = 0; fila < desplazamiento; fila++) {
-            for (int columna = 1; columna <= numeroColumna; columna++) {
-                if (fila > 0 && (columna == (desplazamiento - fila) || columna == (desplazamiento + fila))) {
+        int altura = scanner.nextInt();
+        int anchoFigura = (2 * altura) - 1;
+
+        for (int nivelActual = 0; nivelActual < altura; nivelActual++) {
+            for (int posicion = 1; posicion <= anchoFigura; posicion++) {
+                if ((nivelActual == 0) && (posicion == altura)) {
+                    System.out.print("");
+                } else if ((nivelActual > 0) && (posicion == (altura - nivelActual))) {
+                    System.out.print("|");
+                } else if ((nivelActual > 0) && (posicion == (altura + nivelActual) - 1)) {
                     System.out.print("|");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("   ");
                 }
             }
             System.out.println();
