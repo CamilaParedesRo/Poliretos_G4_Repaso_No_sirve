@@ -24,6 +24,8 @@ public class App {
         Recursion recursion = new Recursion();
         Automata automata= new Automata();
 
+        automata.G4_Automata03(scanner); 
+        automata.G4_Automata_3(scanner);
         serie.G4_SerieNumerica_S3(scanner);
         serie.G4_SerieNumerica_S8(scanner);
         secuencia.G4_Secuencia_CaracterS3(scanner);
@@ -41,8 +43,8 @@ public class App {
         System.out.println();
         loading.G4_Loading_11(random);
         recursion.G4_Recursion_4(scanner);
-        automata.G4_Automata03(scanner);
-        automata.G4_Automata_3(scanner);
+        
+        
 
 
 
