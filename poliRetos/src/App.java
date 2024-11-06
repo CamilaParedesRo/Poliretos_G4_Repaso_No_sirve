@@ -64,7 +64,7 @@ public class App {
     Thread.sleep(700); 
     System.out.println(" ");
         
-    automata.G4_Automata_5("edad,");
+    automata.G4_Automata_5(scanner);
     Thread.sleep(700); 
 
     }
