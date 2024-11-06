@@ -1,4 +1,4 @@
-package Poliretos;
+package Poli_Retos;
 
 public class Recursion {
   

@@ -1,8 +1,8 @@
-package Poliretos;
+package Poli_Retos;
 
 import java.util.Scanner;
 
-public class SeriesDeCaracteres {
+public class SeriesDeCaracteres{
 
    public void G4_SeriesDeCaracteres_SC1 (Scanner scanner){
         int cantidad;

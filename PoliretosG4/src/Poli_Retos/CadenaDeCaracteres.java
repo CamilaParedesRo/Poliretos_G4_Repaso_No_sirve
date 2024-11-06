@@ -1,4 +1,4 @@
-package Poliretos;
+package Poli_Retos;
 
 import java.util.HashMap;
 import java.util.Map;
