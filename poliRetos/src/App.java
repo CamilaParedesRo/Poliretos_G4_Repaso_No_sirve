@@ -59,7 +59,7 @@ public class App {
     System.out.println(" ");
 
     recursion.G4_Recursion_1(0);
-    recursion.mostrarConteoRecursivo(34);
+    recursion.G4_Recursion_6(7);
     g5.mostrarGrafoYAutomata("edad,");
 
     }
