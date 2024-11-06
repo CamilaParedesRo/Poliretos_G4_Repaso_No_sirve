@@ -18,8 +18,7 @@ public class App {
     Cadenas cadena = new Cadenas();
     Arrays array = new Arrays();
     Loading loding = new Loading();
-    Recursion r1 = new Recursion();
-    Recursion r6 = new Recursion();
+    Recursion recursion = new Recursion();
     GrafosAutomatas g5 = new GrafosAutomatas();
 
 
@@ -59,8 +58,8 @@ public class App {
     Thread.sleep(700); 
     System.out.println(" ");
 
-    r1.calcularFactorial(0);
-    r6.mostrarConteoRecursivo(34);
+    recursion.G4_Recursion_1(0);
+    recursion.mostrarConteoRecursivo(34);
     g5.mostrarGrafoYAutomata("edad,");
 
     }
