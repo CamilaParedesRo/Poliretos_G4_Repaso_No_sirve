@@ -1,58 +1,66 @@
 
-import SerieNumericas.S1;
-import SerieNumericas.S6;
-import SeriesCaracteres.SC1;
-import SeriesCaracteres.SC6_1;
-import SeriesCaracteres.SC6_2;
-import Figuras.F2;
-import Figuras.F7;
-import GrafosAutomatas.A1;
-import GrafosAutomatas.A6;
-import Loading.L4;
-import Loading.L9;
-import Recursion.R2;
-import Arrays.AR4;
-import CadenaCaracteres.CC3;
-import CadenaCaracteres.CC8;
-import Figuras.F12;
-import Figuras.F17;
+import Poliretos.Array;
+import Poliretos.Automatas;
+import Poliretos.CadenaDeCaracteres;
+import Poliretos.Figuras;
+import Poliretos.Loading;
+import Poliretos.Recursion;
+import Poliretos.SeriesDeCaracteres;
+import Poliretos.Seriesnumericas;
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        // S1 serieS1 = new S1();
-        // S6 serieS6 = new S6();
-    //  SC1 serieSC1 = new SC1();
-    //   SC6_1 serie_SC6_1 = new SC6_1();
-    //    SC6_2 serie_SC6_2 = new SC6_2();
-    //    F2 figura_2 = new F2();
-        // F7 figura_7 = new F7();
-    //    F12 figura_12 = new F12();
-    //    F17 figura_17 = new F17();
-        // CC3 cadena_3 = new CC3();
-        // CC8 cadena_8 = new CC8();
-        // AR4 array_4 = new AR4();
-        // R2 recusionR2 = new R2();
-        // L9 Loading_9 = new L9();
-     L4 loading_4 = new L4();
-    //    A1 automata = new A1();
-    //    A6 automata_6 = new A6();
 
-    //    serieS1.serie();
-    //    serieS6.serieN2();
-    //   serieSC1.serie_SC1();
-    // serie_SC6_1.serieSC6_1();
-    //   serie_SC6_2.serieSC6_2();
-    //   figura_2.figura2();
-    //   figura_12.figura12();
-    //    figura_17.figura17();
-    //    figura_7.figura7();
-    //   cadena_3.cadena3();
-    //    cadena_8.cadena8();
-    //   array_4.array4();
-    //   recusionR2.sumaDeRecursion();
-    //   Loading_9.porcenjateNombre();
-     loading_4.animacion();
-    //    automata.automata1();
-    //    automata_6.automata6();
+        System.out.println("Integrantes del grupo:");
+        System.out.println("Paredes.Camila");
+        System.out.println("Pillajo.Anahi");
+        System.out.println("Pinargote.Eliana");
+        System.out.println("Rochina.Adayeli");
+        
+         Scanner scanner = new Scanner(System.in);
 
+        Seriesnumericas serie = new Seriesnumericas( );
+        SeriesDeCaracteres serieCaracteres = new SeriesDeCaracteres();
+        Figuras figuras = new Figuras();
+        CadenaDeCaracteres cadena = new CadenaDeCaracteres();
+        Array array = new Array();
+        Loading loading = new Loading();
+        Recursion recursion = new Recursion();
+        Automatas automatas = new Automatas();
+
+        serie.G4_SeriesNumericas_S1(scanner);
+        serie.G4_SeriesNumericas_S6(scanner);
+        System.out.println(" ");
+
+        serieCaracteres.G4_SeriesDeCaracteres_SC1(scanner);
+        serieCaracteres.G4_SeriesDeCaracteres_SC6_1(scanner);
+        serieCaracteres.G4_SeriesDeCaracteres_SC6_2(scanner);
+        System.out.println(" ");
+
+        figuras.G4_Figuras_2();
+        figuras.G4_Figuras_7(scanner);
+        figuras.G4_Figuras_12(scanner);
+        figuras.G4_Figuras_17();
+        System.out.println(" ");
+
+        cadena.G4_CadenadeCaracteres_3(scanner);
+        cadena.G4_CadenadeCaracteres_8(scanner);
+        System.out.println(" ");
+
+        array.G4_Array_4();
+        System.out.println(" ");
+
+        loading.G4_Loading_4();
+        loading.G4_Loading_9(scanner);
+        System.out.println(" ");
+
+        recursion.G4_Recursion_2();
+        System.out.println(" ");
+
+        automatas.G4_Automata_1(scanner);
+        automatas.G4_Automata_6(scanner);
+
+    scanner.close();
     }
 }
