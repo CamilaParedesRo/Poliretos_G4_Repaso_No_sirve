@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Figura {
 
-    public void Figura4(Scanner scanner) {
+    public void G4_Figura_4(Scanner scanner) {
         
         
         System.out.print("Ingrese el tamaño: ");
@@ -22,42 +22,31 @@ public class Figura {
         
     }
 
-    public void Figura09(Scanner scanner){
+    public void G4_Figura_9(Scanner scanner) {
         int desplazamiento;
-       
+        
         System.out.println("Ingrese el número de la extensión de la escalera: ");
         desplazamiento = scanner.nextInt();
-
-        for (int filas = 1; filas <= desplazamiento; filas++) {
-           
-            for (int columnas = 1; columnas <= filas; columnas++) {
-                System.out.print("   "); // Espacios en blanco a la izquierda de la escalera
-            }
-            System.out.print("__|");
-
-            
-            int espaciosCentro = (desplazamiento - filas) * 3;
-            for (int i = 0; i < espaciosCentro; i++) {
-                System.out.print(" ");
-            }
-
-           
-            for (int columnas = 1; columnas <= filas; columnas++) {
-                if (columnas == 1) {
-                    System.out.print("|__");
+    
+        int numeroColumna = (2 * desplazamiento) - 1;
+    
+        for (int fila = 0; fila < desplazamiento; fila++) {
+            for (int columna = 1; columna <= numeroColumna; columna++) {
+                if (fila > 0 && (columna == (desplazamiento - fila) || columna == (desplazamiento + fila))) {
+                    System.out.print("|");
                 } else {
-                    System.out.print("   "); 
+                    System.out.print(" ");
                 }
             }
-
             System.out.println();
         }
     }
     
+    
 
     
 
-    public void Figura14(Scanner scanner) {
+    public void G4_Figura_14(Scanner scanner) {
         System.out.print("Introduce el número de filas para el Triángulo de Pascal: ");
         int filas = scanner.nextInt();
 
@@ -75,7 +64,7 @@ public class Figura {
             System.out.println();
         }
     }
-    public void Figura19(Scanner scanner){
+    public void G4_Figura_19(Scanner scanner){
         System.out.print("Introduce el número de filas para el patrón triangular: ");
         int filas = scanner.nextInt();
         

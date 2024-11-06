@@ -8,13 +8,14 @@ import Poli_Reto.Figura;
 import Poli_Reto.Loading;
 import Poli_Reto.Recursion;
 import Poli_Reto.Secuencia_Caracter;
-import Poli_Reto.Serie_Numerica;
+import Poli_Reto.SerieNumerica;
+
 
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        Serie_Numerica serie = new Serie_Numerica(); 
+        SerieNumerica serie= new SerieNumerica();
         Secuencia_Caracter secuencia = new Secuencia_Caracter();
         Figura figura = new Figura();
         Cadena cadena = new Cadena();
@@ -23,27 +24,28 @@ public class App {
         Recursion recursion = new Recursion();
         Automata automata= new Automata();
 
-        automata.Automata03(scanner);
-        automata.Automata3(scanner);
-        serie.SerieS3(scanner);
-        serie.SerieS8(scanner);
-        secuencia.Secuencia_CaracterS3(scanner);
-        secuencia.Secuencia_CaracterS8();
+        serie.G4_SerieNumerica_S3(scanner);
+        serie.G4_SerieNumerica_S8(scanner);
+        secuencia.G4_Secuencia_CaracterS3(scanner);
+        secuencia.G4_Secuencia_CaracterS8();
         System.out.println();
-        figura.Figura4(scanner);
+        figura.G4_Figura_4( scanner);
+        figura.G4_Figura_9(scanner);
+        figura.G4_Figura_14(scanner);
+        figura.G4_Figura_19(scanner);
+        cadena.G4_Cadena_5(scanner);
+        arreglo.G4_Areglo_1(scanner);
+        loading.G4_Loading_1();
         System.out.println();
-        figura.Figura14(scanner);
-        figura.Figura19(scanner);
-        figura.Figura09(scanner);
-        recursion.Recursion04(scanner);
-        cadena.Cadena05(scanner);
-        arreglo.Areglo01(scanner);
-        loading.Loading01();
+        loading.G4_Loading_6();
         System.out.println();
-        loading.Loading06();
-        System.out.println();
-        loading.Loading11(random);
-        
+        loading.G4_Loading_11(random);
+        recursion.G4_Recursion_4(scanner);
+        automata.G4_Automata03(scanner);
+        automata.G4_Automata_3(scanner);
+
+
+
         
 
        

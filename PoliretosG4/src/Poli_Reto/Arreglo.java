@@ -3,7 +3,7 @@ package Poli_Reto;
 import java.util.Scanner;
 
 public class Arreglo{
-    public void Areglo01(Scanner scanner) {
+    public void G4_Areglo_1(Scanner scanner) {
         
         String nombreCompleto = "Anahi Valentina Pillajo Teran";
         String[] palabras = nombreCompleto.split(" ");

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Recursion {
 
-    public int Recursion04(Scanner scanner) {
+    public int G4_Recursion_4(Scanner scanner) {
         
         if (scanner.hasNextLine()) {
             scanner.nextLine(); 

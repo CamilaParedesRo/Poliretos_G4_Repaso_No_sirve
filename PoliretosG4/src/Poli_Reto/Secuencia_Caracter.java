@@ -16,7 +16,7 @@ public class Secuencia_Caracter {
         return true;  
     }
 
-    public void Secuencia_CaracterS3(Scanner scanner) {
+    public void G4_Secuencia_CaracterS3(Scanner scanner) {
         System.out.print("Ingrese el límite de la serie S3: ");
         int limit = scanner.nextInt(); 
         int contador = 0;
@@ -34,7 +34,7 @@ public class Secuencia_Caracter {
         System.out.println();
     }
 
-    public void Secuencia_CaracterS8() {
+    public void G4_Secuencia_CaracterS8() {
       
         imprimirSecuencia('a', 1);
         imprimirSecuencia('b', 3);

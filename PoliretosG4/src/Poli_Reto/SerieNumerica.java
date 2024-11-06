@@ -1,11 +1,10 @@
-
 package Poli_Reto;
 
 import java.util.Scanner;
 
-public class Serie_Numerica {
-    
-    public void SerieS3(Scanner scanner) {
+public class SerieNumerica {
+
+    public void G4_SerieNumerica_S3(Scanner scanner) {
         System.out.print("Ingrese el límite de la serie S3: ");
         int limit = scanner.nextInt(); 
     
@@ -25,7 +24,7 @@ public class Serie_Numerica {
         System.out.println(); 
     }
 
-    public void SerieS8(Scanner scanner) {
+     public void G4_SerieNumerica_S8(Scanner scanner) {
         System.out.print("Ingrese el límite de la serie S8: ");
         int limite = scanner.nextInt(); 
         int termino = 3;
@@ -37,4 +36,5 @@ public class Serie_Numerica {
         }
         System.out.println(); 
     }
+
 }

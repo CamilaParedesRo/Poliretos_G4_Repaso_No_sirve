@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Cadena {
 
-    public void Cadena05(Scanner scanner) {
+    public void G4_Cadena_5(Scanner scanner) {
         System.out.print("Ingresa una palabra: ");
     
         if (scanner.hasNextLine()) {  
