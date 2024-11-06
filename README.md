@@ -2,9 +2,11 @@
 
 **Grupo:** 4
 
-**Autores:**                 
-*Paredes Camila*
-*Pillajo Anahi*
+**Autores:**  
+*Pillajo Anahi.*
+*Rochina Adayeli.*
+*Paredes Camila.*
+
 
 **Curso:**
 
