@@ -22,7 +22,26 @@ public class Figura {
           System.out.println();    
       }
       System.out.println(" ");    
+   } 
+
+   public void G4_Figuras_3 (Scanner scanner){
+        int tamano;
+      System.out.println("Figura 03");    
+        System.out.println("Ingrese el numero de la extención de la escalera: ");
+        tamano = scanner.nextInt();
+        for (int filas = 1; filas <= tamano; filas++) {                      
+            for (int columnas = 1 ; columnas <= tamano; columnas++){
+                if (columnas <= filas){
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println ("");
+        }
+        System.out.println(" ");
    }
+
 
    public void G4_Figuras_7(Scanner scanner){
        int desplazamiento;
@@ -82,5 +101,36 @@ public void G4_Figuras_17() {
 System.out.println(" ");
 
 } 
+
+// 2 
+// 1   2 
+// 1   3   2 
+// 1   4   5   2 
+// 1   5   9   7  2 
+// 1   6   14  16  9  2 
+
+    public void G4_Figuras_18() {
+        int longitud = 5 ;
+        System.out.println("Figura 18");    
+         for (int filas = 1; filas <= longitud ; filas++) {                      
+             for (int columnas = 1 ; columnas <= longitud ; columnas++){   
+                if (columnas <= filas){
+                    if (columnas == filas){
+                        System.out.print("2");
+                    } else if  (columnas == 1){
+                        System.out.print("1");
+                    } else {
+                        System.out.print(columnas);  // me falta la secuencia
+                    }
+
+                } else {
+                    System.out.print("  ");
+                }
+             }
+             System.out.println();
+        }
+
+    }
+
 
 }

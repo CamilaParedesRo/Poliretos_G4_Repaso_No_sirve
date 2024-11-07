@@ -19,23 +19,22 @@ public class App {
         System.out.println(" ");
         Thread.sleep(500); 
 
-        
          Scanner scanner = new Scanner(System.in);
 
-        Seriesnumerica serie = new Seriesnumerica( );
-        SeriesDeCaracteres serieCaracteres = new SeriesDeCaracteres();
-        Figura figuras = new Figura();
-        CadenaDeCaracteres cadena = new CadenaDeCaracteres();
-        Array array = new Array();
-        Loading loading = new Loading();
-        Recursion recursion = new Recursion();
-        Automata automatas = new Automata();
+         Seriesnumerica serie = new Seriesnumerica( );
+         SeriesDeCaracteres serieCaracteres = new SeriesDeCaracteres();
+         Figura figuras = new Figura();
+         CadenaDeCaracteres cadena = new CadenaDeCaracteres();
+         Array array = new Array();
+         Loading loading = new Loading();
+         Recursion recursion = new Recursion();
+         Automata automatas = new Automata();
 
-        serie.G4_SeriesNumericas_S1(scanner);
-        Thread.sleep(700); 
-        serie.G4_SeriesNumericas_S6(scanner);
-        Thread.sleep(700); 
-        System.out.println(" ");
+         serie.G4_SeriesNumericas_S1(scanner);
+         Thread.sleep(700); 
+         serie.G4_SeriesNumericas_S6(scanner);
+         Thread.sleep(700); 
+         System.out.println(" ");
 
         serieCaracteres.G4_SeriesDeCaracteres_SC1(scanner);
         Thread.sleep(700); 
@@ -47,11 +46,15 @@ public class App {
 
         figuras.G4_Figuras_2();
         Thread.sleep(700); 
+        figuras.G4_Figuras_3(scanner);
+        Thread.sleep(700);
         figuras.G4_Figuras_7(scanner);
         Thread.sleep(700); 
         figuras.G4_Figuras_12(scanner);
         Thread.sleep(700); 
         figuras.G4_Figuras_17();
+        Thread.sleep(700); 
+        figuras.G4_Figuras_18();
         Thread.sleep(700); 
         System.out.println(" ");
 
@@ -63,8 +66,8 @@ public class App {
 
         array.G4_Array_4();
         Thread.sleep(700); 
+        array.G4_Array_5();
         System.out.println(" ");
-
 
         loading.G4_Loading_4();
         Thread.sleep(700); 
@@ -73,6 +76,8 @@ public class App {
         System.out.println(" ");
 
         recursion.G4_Recursion_2();
+        Thread.sleep(700); 
+        recursion.G4_Recursion_3();
         Thread.sleep(700); 
         System.out.println(" ");
 
@@ -85,3 +90,4 @@ public class App {
     scanner.close();
     }
 }
+
